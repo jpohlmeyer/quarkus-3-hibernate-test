@@ -12,7 +12,7 @@ public class Teacher {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   protected Integer id;
 
-  @ManyToMany(fetch = FetchType.EAGER)
+  @ManyToMany(fetch = FetchType.LAZY)
   private Set<Pupil> pupils;
 
   public Teacher() {
